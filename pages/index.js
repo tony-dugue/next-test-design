@@ -13,7 +13,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Link href="/gsap-animation-basic">GSAP Animation (basic)</Link>
+        <Link href="/gsap-animation-basic"><p className={styles.link}>GSAP Animation (basic)</p></Link>
+        <Link href="/smooth-scrolling"><p  className={styles.link}>Smooth scrolling (with Smooth-scrollbar library)</p></Link>
       </main>
 
     </div>

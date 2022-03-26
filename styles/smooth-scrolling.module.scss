@@ -1,0 +1,39 @@
+@import "tools/mixins";
+@import "tools/variables";
+
+.container {
+  padding: 0 2rem;
+}
+
+.back {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.title {
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 8rem;
+  font-size: 4vw;
+}
+
+.imageContainer {
+  max-width: 50vw;
+  margin: 4rem 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}

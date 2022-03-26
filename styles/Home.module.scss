@@ -3,6 +3,8 @@
 
 .container {
   padding: 0 2rem;
+
+  //@include down(104.8125em) {}
 }
 
 .main {
@@ -11,4 +13,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+.link {
+  cursor: pointer;
 }
