@@ -1,0 +1,43 @@
+@import "tools/mixins";
+@import "tools/variables";
+
+.container {
+  padding: 0 2rem;
+
+  //@include down(104.8125em) {}
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.back {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  background: linear-gradient(0deg, #7972e4, #d36bf3);
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+  letter-spacing: 5px;
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+}
