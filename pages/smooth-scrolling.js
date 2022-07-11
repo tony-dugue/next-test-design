@@ -7,7 +7,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const Scroll = dynamic(import ("./components/SmoothScroll"), { ssr: false })
 
-export default function Home() {
+export default function SmoothScrolling() {
 
   const [images, setImages] = useState();
 

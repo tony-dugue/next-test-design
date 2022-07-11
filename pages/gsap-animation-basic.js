@@ -4,7 +4,7 @@ import{ gsap } from 'gsap'
 import styles from '../styles/gsap-animation-basic.module.scss'
 import Link from 'next/link'
 
-export default function Home() {
+export default function GsapAnimationBasic() {
 
   const [toggle, setToggle] = useState(false)
 
