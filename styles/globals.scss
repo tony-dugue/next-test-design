@@ -7,7 +7,9 @@ body {
   height: 100vh;
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 

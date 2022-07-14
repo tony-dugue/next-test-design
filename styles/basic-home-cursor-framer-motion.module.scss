@@ -1,0 +1,38 @@
+@import "tools/mixins";
+@import "tools/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  cursor: none;
+}
+
+.title {
+  font-size: 8rem;
+  color: #0396A6;
+}
+
+.description {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 50px;
+
+  span {
+    color: #0396A6;
+  }
+}
+
+.cursor {
+  background-color: #111;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
