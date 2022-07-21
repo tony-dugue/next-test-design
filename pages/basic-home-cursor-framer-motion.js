@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import { motion } from 'framer-motion'
 import styles from '../styles/basic-home-cursor-framer-motion.module.scss'
+import Link from "next/link";
 
 const BasicHomeCursorFramerMotion = () => {
 
@@ -47,6 +48,14 @@ const BasicHomeCursorFramerMotion = () => {
 
   return (
     <div>
+
+      <Link href="/">
+        <div className={styles.back}>
+          <img src="https://img.icons8.com/ios-filled/50/000000/left.png"/>
+          Accueil
+        </div>
+      </Link>
+
       <div className={styles.container}>
         <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className={styles.title}>Hello World</h1>
 
