@@ -94,12 +94,12 @@ const GsapThreejsDuckVsDog = () => {
       tl.to(views[1], {height: 0, bottom: 1, ease:'none'}, section)
     }
 
-    const LoadingManager = new THREE.LoadingManager( setupAnimation)
+    const manager = new THREE.LoadingManager( setupAnimation)
 
-    const gltfLoader = new GLTFLoader(LoadingManager)
+    const loader = new GLTFLoader(manager)
 
     toLoad.forEach( item => {
-      gltfLoader.load(item.file, model => {
+      loader.load(item.file, model => {
         model.scene.traverse( child => {
           if (child instanceof THREE.Mesh) {
             child.receiveShadow = true

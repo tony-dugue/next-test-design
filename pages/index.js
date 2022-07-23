@@ -18,6 +18,7 @@ export default function Home() {
         <Link href="/cuberto-home-cursor"><p  className={styles.link}>Cuberto home cursor (with GSAP)</p></Link>
         <Link href="/basic-home-cursor-framer-motion"><p  className={styles.link}>Basic home cursor (with framer motion)</p></Link>
         <Link href="/gsap-threejs-duck-vs-dog"><p  className={styles.link}>Duck vs Dog (with gsap & threejs)</p></Link>
+        <Link href="/gsap-threejs-airplane"><p  className={styles.link}>Airplane (with gsap & threejs)</p></Link>
       </main>
 
     </div>
