@@ -47,7 +47,7 @@ const BasicHomeCursorFramerMotion = () => {
   const descriptionLeave = () => setCursorVariant("default")
 
   return (
-    <div>
+    <main className="main">
 
       <Link href="/">
         <div className={styles.back}>
@@ -67,7 +67,7 @@ const BasicHomeCursorFramerMotion = () => {
 
         <motion.div className={styles.cursor} variants={variants} animate={cursorVariant} />
       </div>
-    </div>
+    </main>
   )
 }
 

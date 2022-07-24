@@ -20,7 +20,7 @@ const PI = Math.PI;
 
 const GsapThreejsDuckVsDog = () => {
 
-  gsap.registerPlugin(ScrollTrigger)  // on enregistre le plugin scrollTrigger de GSAP
+  gsap.registerPlugin(ScrollTrigger)
 
   const threeRender =  () => {
 
@@ -60,7 +60,7 @@ const GsapThreejsDuckVsDog = () => {
           ease: "power2.inOut"
         },
         scrollTrigger: {
-          trigger: ".page",
+          trigger: ".content",
           start: "top top",
           end: "bottom bottom",
           scrub: .1,
@@ -236,11 +236,11 @@ const GsapThreejsDuckVsDog = () => {
   }, [])
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
 
       <div className={styles.canvasContainer} id="canvas-container"></div>
 
-      <div className={`${styles.page} page`}>
+      <div className={`${styles.content} content`}>
 
         <section className={styles.section}>
           <Link href="/">
@@ -269,7 +269,7 @@ const GsapThreejsDuckVsDog = () => {
         </section>
 
       </div>
-    </div>
+    </main>
   )
 }
 
